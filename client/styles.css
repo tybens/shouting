@@ -12,7 +12,20 @@
 }
 
 .shouts {
-  width: 80%;
+  width: 50%;
   margin: 0 auto;
+  text-align: center;
+}
 
+.tabular {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+tr {
+  text-align: center;
+}
+th {
+  text-align: inherit;
 }

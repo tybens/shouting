@@ -52,22 +52,22 @@ function listAllShouts() {
 
       shouts.reverse() // show them in reverse order
       shouts.forEach(shout => {
-        const div = document.createElement('div');
+        const tr = document.createElement('tr');
 
-        const header = document.createElement('h3');
+        const header = document.createElement('td');
         header.textContent = shout.name;
 
-        const contents = document.createElement('p');
+        const contents = document.createElement('td');
         contents.textContent = shout.content;
 
-        const date = document.createElement('small');
+        const date = document.createElement('td');
         date.textContent = new Date(shout.created);
 
-        div.appendChild(header);
-        div.appendChild(contents);
-        div.appendChild(date);
+        tr.appendChild(header);
+        tr.appendChild(contents);
+        tr.appendChild(date);
 
-        shoutsElement.append(div)
+        shoutsElement.append(tr)
 
       });
       loadingElement.style.display = 'none';
