@@ -9,15 +9,20 @@
 #### Starting web-page on a local machine:
 *must have mongodb-org installed and the database running*
 
+Clone the repo:
+```Bash
+git clone https://github.com/tybens/shouting.git
+```
+
 To start the back-end server:
 ```Bash
-cd ~/shouting/server
+cd shouting/server
 npm install
 npm run dev
 ```
-To start the front-end server:
+To start the front-end server (must have `live-server` installed):
 ```Bash
-cd ~/shouting/client
+cd shouting/client
 live-server
 ```
 
