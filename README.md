@@ -7,11 +7,14 @@
 - a guarantee of unparalleled happiness
 
 #### Starting web-page on a local machine:
-*must have mongodb-org installed and the database running*
 
 Clone the repo:
 ```Bash
 git clone https://github.com/tybens/shouting.git
+```
+*must have mongodb-org installed and the database running*
+```Bash
+sudo service mongod start
 ```
 
 To start the back-end server:
